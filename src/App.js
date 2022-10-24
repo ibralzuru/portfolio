@@ -13,7 +13,6 @@ class App extends Component {
           <ResponsiveAppBar />
           <Routes>
             <Route path='/' element={<Home />} />
-           
           </Routes>
         </BrowserRouter>
       </div>
