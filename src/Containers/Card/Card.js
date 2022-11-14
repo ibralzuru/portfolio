@@ -10,18 +10,17 @@ import { CardActionArea } from '@mui/material'
 export default function ActionAreaCard({ projects: { name, image, href } }) {
   return (
 
-    <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea href={href} >
+    <Card sx={{ maxWidth: 250 }}>
+      <CardActionArea href={href} target="_blank" >
         <CardMedia
           component="img"
-          height="150" 
-          src={image}
+          height="170" 
+          image={image}
           alt={name}
-          
-
+        
         />
         <CardContent  >
-          <Typography gutterBottom variant="h7" component="div" textAlign="center" >
+          <Typography variant="body2" component="div" textAlign="center" margin={-1} >
             {name}
           </Typography>
 

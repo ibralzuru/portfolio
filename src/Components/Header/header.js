@@ -12,12 +12,14 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import MoodSharpIcon from '@mui/icons-material/MoodSharp';
+//import image4 from './Containers/Home/Imagenes/ibra.jpg'
 
 
 
 
 
-const pages = ['Home', 'Work', 'Contact'];
+
+const pages = ['Home', 'Projects', 'Contact'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 
@@ -49,11 +51,12 @@ const ResponsiveAppBar = () => {
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href="#projects"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
+              flexGrow: 5,
+              fontFamily: 'Roboto',
               fontWeight: 700,
               letterSpacing: '.2rem',
               color: 'inherit',
@@ -71,6 +74,7 @@ const ResponsiveAppBar = () => {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
+              
             >
               <MenuIcon />
             </IconButton>
@@ -104,12 +108,11 @@ const ResponsiveAppBar = () => {
             variant="h5"
             noWrap
             component="a"
-            href=""
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
-              fontFamily: 'monospace',
+              fontFamily: 'Roboto',
               fontWeight: 700,
               letterSpacing: '.2rem',
               color: 'inherit',
@@ -131,9 +134,9 @@ const ResponsiveAppBar = () => {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+            <Tooltip   title="Add" >
+              <IconButton  onClick={handleOpenUserMenu} sx={{ p: 0  }} >
+                <Avatar   sx={{ width: 54, height: 54 }}  alt="imagen-ibra" src='https://i.postimg.cc/52mVhpDq/IMG-20181222-WA0005.jpg' />
               </IconButton>
             </Tooltip>
             <Menu
