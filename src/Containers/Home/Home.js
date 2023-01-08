@@ -53,18 +53,19 @@ const Home = () => {
 
     <div>
       <Grid>
-        <React.Fragment>
+        <React.Fragment >
           <CssBaseline />
-          <Container maxWidth="lm" style={styles.paperContainer}  >
+          <Container  id='home' maxWidth="lm" style={styles.paperContainer}  >
             <Grid container
               spacing={0}
               direction="column"
               alignItems="center"
               justifyContent="center"
-              style={{ minHeight: '95vh' }} sx={{ bgcolor: 'primary' }}>
+              style={{ minHeight: '98vh' }} sx={{ bgcolor: 'primary' }}>
               <Typography align='center' color="#ffff" fontSize="1.5em"  >
-                <h2> HEY! I'M IBRAHIM ALZURU  </h2>
+                <h2  > HEY! I'M IBRAHIM ALZURU  </h2>
                 <h2>FullStack Developer</h2>
+                
               </Typography>
               <Button style={{ background: '#2E3B55' }} variant="contained" size="large" href="#projects">
                 PROJECTS
@@ -86,7 +87,7 @@ const Home = () => {
               alignItems="center"
               justifyContent="center"
               style={{ minHeight: '98vh' }} sx={{ bgcolor: 'primary' }}>
-              <Typography align='center' color="#ffff" fontSize="1.5em"    >
+              <Typography align='center' color="#ffff" fontSize="1.5em" marginBottom={'1em'}    >
                 <h1>Projects</h1>
               </Typography>
 
@@ -118,6 +119,8 @@ const Home = () => {
               justifyContent="center"
               style={{ minHeight: '90vh' }} sx={{ bgcolor: 'primary' }}>
               <Typography align='center' color="#ffff" fontSize="1.5em"  >
+                <h2>About Me</h2>
+                <Typography maxWidth={"60em"}  paddingX={"4em"}> In my professional career, two characteristics can be distinguished that are repeated over time, one is the work with people, and the other is the love for technology. This led me to sign up for web programming (SOC) courses and recently completed the GeeksHubs Academy Full-Stack Developer Bootcamp. I am aware that it is only the beginning... I remain active developing new projects and looking forward to new opportunities.</Typography>
                 <h2>Contacts</h2>
               </Typography>
               <Container style={{ textAlign: "center" }} sx={{ bgcolor: 'primary' }}>

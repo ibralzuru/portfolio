@@ -16,9 +16,6 @@ import MoodSharpIcon from '@mui/icons-material/MoodSharp';
 
 
 
-
-
-
 const pages = ['Home', 'Projects', 'Contact'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -51,16 +48,17 @@ const ResponsiveAppBar = () => {
             variant="h6"
             noWrap
             component="a"
-            href="#projects"
+            href="#home"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              flexGrow: 5,
+              flexGrow: 9,
               fontFamily: 'Roboto',
               fontWeight: 700,
               letterSpacing: '.2rem',
               color: 'inherit',
               textDecoration: 'none',
+              
             }}
           >
             Ibra Alzuru
@@ -136,7 +134,7 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip   title="Add" >
               <IconButton  onClick={handleOpenUserMenu} sx={{ p: 0  }} >
-                <Avatar   sx={{ width: 54, height: 54 }}  alt="imagen-ibra" src='https://i.postimg.cc/52mVhpDq/IMG-20181222-WA0005.jpg' />
+                <Avatar   sx={{ width: 50, height: 50 }}  alt="imagen-ibra" src='https://i.postimg.cc/52mVhpDq/IMG-20181222-WA0005.jpg' />
               </IconButton>
             </Tooltip>
             <Menu
